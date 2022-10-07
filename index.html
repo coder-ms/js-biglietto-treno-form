@@ -12,34 +12,187 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        -->
         <link rel="stylesheet" href="css/style.css">
         
     </head>
     <body>
-        <h1>HOW MUCH DO YOU SPEND FOR A TRAIN TRIP?</h1>       
-        <form class="row padding-60">
-            <div class="col-10">
-                <label for="inputname" class="form-label">Age of the passenger</label>
-                <input type="number" value="0" id="passengerAge">
-            </div>
-            <div class="col-10">
-                <label for="inputname" class="form-label">Distance(Km) by Train</label>
-                <input type="number" value="0" id="kmTrain">
-            </div>
-        </form>
-        <div class="col">
-            <button id="calculate">Calculate Price</button>
-        </div>
+            <header class="sticky">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="img/unionpacific.png" alt="Logo">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-static">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Union Pacific
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">A brief History</a></li>
+                                <li><a class="dropdown-item" href="#">Who are we</a></li>
+                                <li><a class="dropdown-item" href="#">Our </a></li>
+                                <li><a class="dropdown-item" href="#">login</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Trains
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Buy a ticket</a></li>
+                                    <li><a class="dropdown-item" href="#">New Trains</a></li>
+                                    <li><a class="dropdown-item" href="#">New Destinations</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicies
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sales</a></li>
+                                    <li><a class="dropdown-item" href="#">New routes</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Calculate your trip</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Official Mechandise</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Support
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Support</a></li>
+                                    <li><a class="dropdown-item" href="#">Reimbursement of expenses</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                            <div class="nav-box">
+                                <a href="#" class="btn btn-blue-xs btn-outline-light m-60 fz-075rem">Login</a>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn fxz-1rem btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                  </nav>         
+            </header>
+            <main>
+            <section id="hero">
+                <div>
+                    <div class="bg-image-hero1">
+                        <div class="box p-40 ">
+                            <h1 class="c-red">HOW MUCH DO YOU SPEND FOR A TRAIN TRIP?</h1>       
+                            <div class="row p-60 text-white">
+                                <div class="col-10">
+                                    <label for="inputname" class="form-label">Age of the passenger</label>
+                                    <input type="number" value="0" id="passengerAge">
+                                </div>
+                                <div class="col-10">
+                                    <label for="inputname" class="form-label  mt-10">Distance(Km) by Train</label>
+                                    <input type="number" value="0" id="kmTrain">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn-blue-small mt-20" id="calculate">Calculate Price</button>
+                            </div>
 
-        <span>Total: </span>
-        <span id="cost"></span>
-        <span>$</span>
-        <p>Enjoy the Trip!</p>
+                            <span class="text-white">Total: </span>
+                            <span id="cost" class="info mybg-lavish-white" ></span>
+                            <span class="text-white">$</span>
+                            <p class="enjoy">Enjoy the Trip!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </main>
 
+            <footer class="container-fluid">
+                <div class="footer-bottom mybg-lavish-white row">
+                    <!--Logo footer-->
+                   <div class="row">
+                        <div class=" link-col col-6 p-10 row">
+                            <div class="col-12 col-md-12 col-sm-12 p-10">
+                                <img class="footer-logo" src="img/usa.png" alt="logo">
+                            </div>
+                            <div class="col-12 col-md-12 col-sm-12 p-20">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="p-10">Country / Region: USA</span>
+                            </div>
+                        </div>
+                        <!-- Links -->
+                        <div class="col-6 col-md-6 col-sm-12 row p-10 fz-075rem">
+                            <div class="link-col col-4 col-md-3 col-sm-12 col-xs-12 text-start pt-20">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="link-col col-4 col-md-3 col-sm-12 col-xs-12 text-start pt-20">
+                                <ul class="list-unstyled mb-0 list">
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="link-col col-4 col-md-3 col-sm-12 text-start pt-20">
+                                <ul class="list-unstyled mb-0 list">
+                                    <li>
+                                      <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                      <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                    <li>
+                                      <a href="#!" class="list">Link footer n</a>
+                                    </li>
+                                  </ul>
+                            </div>                   
+                        </div>
+                   </div>
+                </div>
+                <div class="footer-bottom  mybg-lavish-white row">
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center py-3">
+                        <img class="union-pac p-20" src="img/building_america.png" alt="Logo">
+                        <p class="my-4 p-20 fz-075rem">Website &copy;2021 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed voluptates laborum dolor totam libero numquam magni. Sint beatae quibusdam sunt perferendis fuga quis, laboriosam illum tenetur explicabo odit nisi laborum harum atque hic assumenda eum similique iure suscipit inventore eius repellendus quos nulla. Ad autem iure ratione a saepe! <a class="list" href="#">More info</a></p>
+                    </div>            
+                </div>
+            </footer>
         <script src="js/script.js"></script>
     </body>
 
