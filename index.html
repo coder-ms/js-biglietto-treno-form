@@ -12,29 +12,30 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
             integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        -->
         <link rel="stylesheet" href="css/style.css">
         
     </head>
     <body>
         <h1>HOW MUCH DO YOU SPEND FOR A TRAIN TRIP?</h1>       
         <form class="row padding-60">
-            <div class="col-12">
+            <div class="col-10">
                 <label for="inputname" class="form-label">Age of the passenger</label>
                 <input type="number" value="0" id="passengerAge">
             </div>
-            <div class="col-12">
+            <div class="col-10">
                 <label for="inputname" class="form-label">Distance(Km) by Train</label>
                 <input type="number" value="0" id="kmTrain">
             </div>
-            <div class="col-2">
-                <button id="calculate">Calculate Price</button>
-            </div>
         </form>
+        <div class="col">
+            <button id="calculate">Calculate Price</button>
+        </div>
 
-
-        <span>The ticket costs</span>
+        <span>Total: </span>
         <span id="cost"></span>
         <span>$</span>
         <p>Enjoy the Trip!</p>
