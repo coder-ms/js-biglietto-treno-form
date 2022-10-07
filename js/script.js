@@ -16,8 +16,8 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 
 
 document.getElementById("calculate").onclick = function(){
-    var agePassenger = document.getElementById("passengerAge").value;
-    var distanceKm = document.getElementById("kmTrain").value;
+    let agePassenger = document.getElementById("passengerAge").value;
+    let distanceKm = document.getElementById("kmTrain").value;
     const costTicket = 0.21;
     if(agePassenger < 18 ){
         costTrip = distanceKm * costTicket * 0.8;
