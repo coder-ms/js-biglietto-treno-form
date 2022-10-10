@@ -13,9 +13,8 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 */
 
-
-
-document.getElementById("calculate").onclick = function(){
+document.addEventListener("click", calcTicket);
+ function calcTicket(){
     let agePassenger = document.getElementById("passengerAge").value;
     let distanceKm = document.getElementById("kmTrain").value;
     const costTicket = 0.21;
